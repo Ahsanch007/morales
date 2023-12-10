@@ -125,6 +125,9 @@
     list-style: none;
 
 }
+.menu-list ul li a.active {
+    color: orange; /* Set the active color */
+}
 
 .menu-list ul li {
     padding: 10px;
@@ -133,6 +136,9 @@
     line-height: 36px;
     letter-spacing: 0em;
 
+}
+.active {
+    color: orange; /* Set the desired active color */
 }
 
 .menu-list ul li a {
@@ -144,7 +150,7 @@
 }
 
 .menu-list ul li a:hover {
-    color: blue;
+    color: orange;
 }
 
 .logo {
@@ -1245,9 +1251,7 @@ color: white;
 }
 
 @media (max-width: 1280px) {
-    #navbar-default {
-        display: none;
-    }
+ 
     .get-details {
        
         flex-wrap: wrap;
@@ -1260,6 +1264,17 @@ color: white;
        
         flex-wrap: wrap;
     
+    }
+    .menu-list ul li {
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+    
+    }
+    .phone-number{
+        height: 40px;
     }
     .reviews-slider{
         gap: 20px;
@@ -1284,6 +1299,12 @@ color: white;
         max-width: 900px;
         width: 100%;
         margin: auto;
+    }
+    .menu{
+        display: inline-block;
+    }
+    #navbar-default {
+        display: none;
     }
     .location-col{
         width: 100%;
@@ -1341,9 +1362,7 @@ color: white;
     .mob-loc{
         padding-left: 23px;
     }
-.menu{
-    display: inline-block;
-}
+
     .get-free h2 {
         font-size: 25px;
         font-weight: 600;
@@ -1541,5 +1560,8 @@ color: white;
     }
     .free-quote{
         max-width: 100%;
+    }
+    .slider{
+        display: none;
     }
 }

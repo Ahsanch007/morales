@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
 
@@ -27,7 +29,7 @@
                     <div id="navbar-default" class="menu-list">
                         <ul>
                             <li>
-                                <a href="#" aria-current="page">Home</a>
+                                <a href="#" class="active" aria-current="page">Home</a>
                             </li>
                             <li>
                                 <a href="#">About</a>
@@ -758,7 +760,17 @@
 
 
     </div>
+    <script>
+        $(document).ready(function () {
+            $('.menu-list ul li a').click(function () {
+                // Remove active class from all items
+                $('.menu-list ul li a').removeClass('active');
 
+                // Add active class to the clicked item
+                $(this).addClass('active');
+            });
+        });
+    </script>
 </body>
 
 </html>
