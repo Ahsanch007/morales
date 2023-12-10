@@ -123,6 +123,7 @@
 .menu-list ul {
     display: flex;
     list-style: none;
+    align-items: center;
 
 }
 .menu-list ul li a.active {
@@ -147,6 +148,35 @@
         #000000;
     transition: .3s;
 
+}
+
+/* Add some basic styling for the dropdown */
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .menu-list ul li a:hover {
@@ -1303,11 +1333,20 @@ color: white;
     .menu{
         display: inline-block;
     }
-    #navbar-default {
-        display: none;
-    }
+ 
     .location-col{
         width: 100%;
+    }
+    .menu-list ul li {
+        padding: 5px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    
     }
     .borderRight {
         display: none;
@@ -1345,7 +1384,14 @@ color: white;
     .phone-number {
         display: none;
     }
-
+    .menu-list ul li {
+        padding:0px 5px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+    
+    }
     .slider img {
         width: 100%;
     }
